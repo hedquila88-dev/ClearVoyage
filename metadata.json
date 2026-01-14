@@ -1,0 +1,7 @@
+{
+  "name": "ClearVoyage",
+  "description": "A meticulous travel logistics assistant for minimalist travelers, providing cross-verified data on costs, survival logistics, and budget optimization.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
