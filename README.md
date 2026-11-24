@@ -5,7 +5,7 @@
 [![Gemini](https://img.shields.io/badge/Google%20Gemini-2.5-4285F4.svg)](https://ai.google.dev/)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4-38BDF8.svg)](https://tailwindcss.com/)
 ClearVoyage is an intelligent travel planning platform powered by Google Gemini. It eliminates guesswork by providing concrete budget breakdowns, crowd analysis, multimodal visual destination recognition, and survival logistics with dual-provider API failover.
-View on Google AI Studio: [ClearVoyage App](https://ai.studio/apps/e1eb6bae-f6ce-4fa0-bfe1-396bc2fec945)
+View on Google AI Studio: [ClearVoyage App](https://aistudio.google.com/apps/837cfdf8-ebdb-4103-83bb-951864290fbd?showAssistant=true&showPreview=true)
 ---
 ## ⚡ Key Features
 - **🗺️ Route Master**: Detailed cost modeling (flights, stay, food, transport, extras) in local and target currencies, destination warnings, and dynamic duration scaling.
@@ -22,7 +22,7 @@ View on Google AI Studio: [ClearVoyage App](https://ai.studio/apps/e1eb6bae-f6ce
 ### 1. Installation
 Clone the repository and install dependencies:
 ```bash
-git clone https://github.com/HEdq-dev/ClearVoyage.git
+git clone https://github.com/hedquila88-dev/ClearVoyage.git
 cd ClearVoyage
 npm install
 
@@ -63,3 +63,6 @@ Open your browser at http://localhost:3000.
   
 
 API keys are stored exclusively in your browser's local storage or server environment and sent directly to Google Gemini and backup endpoints without intermediate telemetry.
+
+
+  
