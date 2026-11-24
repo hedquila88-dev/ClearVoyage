@@ -1,0 +1,12 @@
+{
+  "name": "sharable : ClearVoyage",
+  "description": "A meticulous travel logistics assistant for minimalist travelers, providing cross-verified data on costs, survival logistics, and budget optimization.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

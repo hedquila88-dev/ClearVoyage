@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-voyage-50: #f0f9ff;
+  --color-voyage-100: #e0f2fe;
+  --color-voyage-200: #bae6fd;
+  --color-voyage-300: #7dd3fc;
+  --color-voyage-400: #38bdf8;
+  --color-voyage-500: #0ea5e9;
+  --color-voyage-600: #0284c7;
+  --color-voyage-700: #0369a1;
+  --color-voyage-800: #075985;
+  --color-voyage-900: #0c4a6e;
+  --color-voyage-950: #082f49;
+
+  --animate-fade-in: fadeIn 0.5s ease-out;
+  --animate-fade-in-up: fadeInUp 0.5s ease-out;
+  --animate-slide-in-from-bottom: slideInFromBottom 0.5s ease-out;
+  --animate-zoom-in: zoomIn 0.3s ease-out;
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes slideInFromBottom {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+  @keyframes zoomIn {
+    0% { opacity: 0; transform: scale(0.95); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  @keyframes errorShake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    75% { transform: translateX(4px); }
+  }
+  @keyframes errorPulse {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: #ef4444; box-shadow: 0 0 12px rgba(239, 68, 68, 0.3); }
+  }
+
+  --animate-error-shake: errorShake 0.2s ease-in-out 2;
+  --animate-error-pulse: errorPulse 1s ease-in-out infinite;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-slate-900 dark:bg-slate-950 dark:text-white font-sans;
+    overflow: hidden;
+  }
+
+  .glass-card {
+    @apply bg-slate-900/70 backdrop-blur-md border border-white/10;
+  }
+
+  /* Custom High-Visibility Scrollbar */
+  ::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #020617;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #475569;
+    border-radius: 8px;
+    border: 3px solid #020617;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #64748b;
+  }
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #475569 #020617;
+  }
+}
